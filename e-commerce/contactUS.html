@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7f2092c53d.js" crossorigin="anonymous"></script> 
+    <title>Contact us</title>
+</head>
+<body>
+<div class="containerr">
+    <div class="nivBar">
+        <ul>
+            <li><button><a href="Home.html">Home</a></button></li>
+            <li><button><a href="About.html">About</a></button></li>
+            <li><button><a href="contactUS.html">Contact Us</a></button></li>
+        </ul>
+
+    </div>
+    <div class="title">
+        <p> HOME / <span>Contact Us</span> </p>
+    </div>
+
+
+    <div class="container">
+        <form action="">
+          <div>
+            <label for="username">Name </label>
+            <input
+              type="text"
+              id="username"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+          <p class="Display_None validation" id="P_User">
+            Please Enter Valid Name
+          </p>
+          <div>
+            <label for="email">Email </label>
+            <input
+              type="text"
+              id="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+          <p class="Display_None validation" id="P_email">
+            Please Enter Valid Email
+          </p>
+          <div>
+            <label for="password">Password </label>
+            <input
+              type="password"
+              id="password"
+              placeholder="Enter your password"
+              required
+            />
+          </div>
+          <p class="Display_None validation" id="P_password">
+            Please Enter Valid Password (mixed between char & number)
+          </p>
+          <div>
+            <label for="comment" id="lComment">please write your comment </label>
+            <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+          </div>
+          <div class="submit_reset">
+            <input type="submit" /> <input type="reset" />
+          </div>
+        </form>
+    </div>
+
+    <div class="footer">
+        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook fa-xl"></i></a>
+        <a href="https://twitter.com/?lang=ar"><i class="fa-brands fa-twitter fa-xl"></i></i></a>
+        <a href="https://www.linkedin.com/feed/"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram fa-xl"></i></a>
+        <a href="#"><i class="fa-regular fa-circle-up fa-xl"></i></a>
+        
+    </div>
+<script src="contactUs.js"></script>
+</body>
+</html>

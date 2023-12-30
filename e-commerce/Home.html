@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7f2092c53d.js" crossorigin="anonymous"></script> 
+    <title>Home</title>
+</head>
+<body>
+    <div class="containerr">
+        <div class="nivBar">
+            <ul>
+                <li><button><a href="Home.html">Home</a></button></li>
+                <li><button><a href="About.html">About</a></button></li>
+                <li><button><a href="contactUS.html">Contact Us</a></button></li>
+            </ul>
+
+        </div>
+       
+
+        <div  class="photos">
+            <div class="slide">
+            <img id="photos" src="./Images/1.jpg" >
+            
+            <i id="next" class="fa-solid fa-circle-chevron-right fa-xl" onclick="next()"></i>
+            <i id="previous" class="fa-solid fa-circle-chevron-left fa-xl" onclick="previous()"></i>
+            </div>
+        
+    <div class="cartContainer">
+        
+        <div class="icon-cart">
+            <button id="cartButton" onclick="go()">
+            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 19 20">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 15a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm0 0h8m-8 0-1-4m9 4a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm1-4H5m0 0L3 4m0 0h5.501M3 4l-.792-3H1m11 3h6m-3 3V1"/>
+              </svg>
+              <span id="count">0</span>
+            </button>
+        </div>
+    </div>
+
+    
+
+    <div class="filter">
+        <button id="all" class="filterBtn" onclick="filter('all')">All</button>
+        <button id="televisions" class="filterBtn" onclick="filter('televisions')">televisions</button>
+        <button id="furnitures" class="filterBtn" onclick="filter('furnitures')">furnitures</button>
+        <button id="supermarket" class="filterBtn" onclick="filter('supermarket')">supermarket</button>
+    </div>
+
+    
+
+    <div class="listProduct">
+        <div class="televisions item all"  id="tv1">
+            <img src="./items/tv1.png" alt="">
+            <h2>Lg 55inch</h2>
+            <p>5000$</p>
+            <button class="addCart" id="tv1" onclick="add(this.id)">Add To Cart</button>
+        </div>
+        <div class="televisions item all" id="tv2">
+            <img src="./items/tv2.png" alt="">
+            <h2>Sharp 50inch</h2>
+            <p>4500$</p>
+            <button class="addCart" id="tv2" onclick="add(this.id)">Add To Cart</button>
+        </div>
+        <div class="televisions item all" id="tv3">
+            <img src="./items/tv3.png" alt="">
+            <h2>tornedo 70inch</h2>
+            <p>7000$</p>
+            <button class="addCart" id="tv3" onclick="add(this.id)">Add To Cart</button>
+        </div>
+        <div class="televisions item all" id="tv4">
+            <img src="./items/tv4.png" alt="">
+            <h2>Samsung 60inch</h2>
+            <p>7000$</p>
+            <button class="addCart" id="tv4" onclick="add(this.id)">Add To Cart</button>
+        </div>
+        <div class="furnitures item all" id="furn1" >
+            <img src="./items/furn1.png" alt="">
+            <h2>chair</h2>
+            <p>800$</p>
+            <button class="addCart" id="furn1" onclick="add(this.id)">Add To Cart</button>
+        </div>
+        <div class="furnitures item all" id="furn2">
+            <img src="./items/furn2.png" alt="">
+            <h2>table</h2>
+            <p>700$</p>
+            <button class="addCart" id="furn2" onclick="add(this.id)">Add To Cart</button>
+        </div>
+        <div class="furnitures item all" id="furn3">
+            <img src="./items/furn3.png" alt="">
+            <h2>chaise longue</h2>
+            <p>2000$</p>
+            <button class="addCart" id="furn3" onclick="add(this.id)">Add To Cart</button>
+        </div>
+        <div class="furnitures item all" id="furn4">
+            <img src="./items/furn4.png" alt="">
+            <h2>Couch</h2>
+            <p>1800$</p>
+            <button class="addCart" id="furn4" onclick="add(this.id)">Add To Cart</button>
+        </div>
+        <div class="supermarket item all" id="sup1">
+            <img src="./items/super1.png" alt="">
+            <h2>tide</h2>
+            <p>200$</p>
+            <button class="addCart" id="sup1" onclick="add(this.id)">Add To Cart</button>
+        </div>
+        <div class="supermarket item all" id="sup2">
+            <img src="./items/super2.png" alt="">
+            <h2>juhina</h2>
+            <p>50$</p>
+            <button class="addCart" id="sup2" onclick="add(this.id)">Add To Cart</button>
+        </div>
+        <div class="supermarket item all" id="sup3">
+            <img src="./items/super3.png" alt="">
+            <h2>Hanadi oil</h2>
+            <p>70$</p>
+            <button class="addCart" id="sup3" onclick="add(this.id)">Add To Cart</button>
+        </div>
+        <div class="supermarket item all" id="sup4">
+            <img src="./items/super4.png" alt="">
+            <h2>Shamakh</h2>
+            <p>1000$</p>
+            <button class="addCart" id="sup4" onclick="add(this.id)">Add To Cart</button>
+        </div>
+    </div>
+
+
+
+    <div class="showProduct">
+        <div class="televisions items all"  id="tv1">
+            <img src="./items/tv1.png" alt="">
+            <h2>Lg 55inch</h2>
+            <p>5000$</p>
+            <button class="addCart" id="tv1" onclick="remove(this.id)">Remove from Cart</button>
+        </div>
+        <div class="televisions items all" id="tv2">
+            <img src="./items/tv2.png" alt="">
+            <h2>Sharp 50inch</h2>
+            <p>4500$</p>
+            <button class="addCart" id="tv2" onclick="remove(this.id)">Remove from Cart</button>
+        </div>
+        <div class="televisions items all" id="tv3">
+            <img src="./items/tv3.png" alt="">
+            <h2>tornedo 70inch</h2>
+            <p>7000$</p>
+            <button class="addCart" id="tv3" onclick="remove(this.id)">Remove from Cart</button>
+        </div>
+        <div class="televisions items all" id="tv4">
+            <img src="./items/tv4.png" alt="">
+            <h2>Samsung 60inch</h2>
+            <p>7000$</p>
+            <button class="addCart" id="tv4" onclick="remove(this.id)">Remove from Cart</button>
+        </div>
+        <div class="furnitures items all" id="furn1" >
+            <img src="./items/furn1.png" alt="">
+            <h2>chair</h2>
+            <p>800$</p>
+            <button class="addCart" id="furn1" onclick="remove(this.id)">Remove from Cart</button>
+        </div>
+        <div class="furnitures items all" id="furn2">
+            <img src="./items/furn2.png" alt="">
+            <h2>table</h2>
+            <p>700$</p>
+            <button class="addCart" id="furn2" onclick="remove(this.id)">Remove from Cart</button>
+        </div>
+        <div class="furnitures items all" id="furn3">
+            <img src="./items/furn3.png" alt="">
+            <h2>chaise longue</h2>
+            <p>2000$</p>
+            <button class="addCart" id="furn3" onclick="remove(this.id)">Remove from Cart</button>
+        </div>
+        <div class="furnitures items all" id="furn4">
+            <img src="./items/furn4.png" alt="">
+            <h2>Couch</h2>
+            <p>1800$</p>
+            <button class="addCart" id="furn4" onclick="remove(this.id)">Remove from Cart</button>
+        </div>
+        <div class="supermarket items all" id="sup1">
+            <img src="./items/super1.png" alt="">
+            <h2>tide</h2>
+            <p>200$</p>
+            <button class="addCart" id="sup1" onclick="remove(this.id)">Remove from Cart</button>
+        </div>
+        <div class="supermarket items all" id="sup2">
+            <img src="./items/super2.png" alt="">
+            <h2>juhina</h2>
+            <p>50$</p>
+            <button class="addCart" id="sup2" onclick="remove(this.id)">Remove from Cart</button>
+        </div>
+        <div class="supermarket items all" id="sup3">
+            <img src="./items/super3.png" alt="">
+            <h2>Hanadi oil</h2>
+            <p>70$</p>
+            <button class="addCart" id="sup3" onclick="remove(this.id)">Remove from Cart</button>
+        </div>
+        <div class="supermarket items all" id="sup4">
+            <img src="./items/super4.png" alt="">
+            <h2>Shamakh</h2>
+            <p>1000$</p>
+            <button class="addCart" id="sup4" onclick="remove(this.id)">Remove from Cart</button>
+        </div>
+    </div>
+
+
+
+        <div class="footer">
+            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook fa-xl"></i></a>
+            <a href="https://twitter.com/?lang=ar"><i class="fa-brands fa-twitter fa-xl"></i></i></a>
+            <a href="https://www.linkedin.com/feed/"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram fa-xl"></i></a>
+            <a href="#"><i class="fa-regular fa-circle-up fa-xl"></i></a>
+            
+        </div>
+    </div>
+
+    <script src="code.js"></script>
+</body>
+</html>
